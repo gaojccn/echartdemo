@@ -1,0 +1,10 @@
+/build
+/.idea
+/.gradle
+/catalina.home_IS_UNDEFINED/logs
+/src/main/webapp/WEB-INF/version.json
+/classes
+/out
+.project
+*.iml
+/$*

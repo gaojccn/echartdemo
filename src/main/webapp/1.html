@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test 1</title>
+
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        var dd=null;
+        console.log(!dd)
+
+        var arr2=[];
+        console.log(arr2.length)
+            var arr=new Array(2);
+            for(let i=0;i<arr.length;i++){
+                arr[i]=new Array(2)
+            }
+            arr[0][0]=123;
+
+            console.log(arr)
+
+            function setOneStep(t,obj){
+                var productionTypeArr=["packing","manualOuterPacking"]
+                if($.inArray(t,productionTypeArr)>=0){
+                    console.log('yes')
+                    obj[0][0]=1
+                }
+            }
+
+         // 相当于 document.ready
+        $(function(){
+
+            // alert("3.页面加载完毕");
+            setOneStep("packing",arr);
+
+            console.log(arr)
+
+        })
+
+
+    </script>
+
+</body>
+</html>

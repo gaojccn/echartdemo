@@ -1,0 +1,52 @@
+能正确用的：
+
+{
+  "data": [
+    {
+      "current_process_name": "",
+      "id": 1,
+      "process_name": "手工压膜",
+      "next_process": [
+        5
+      ],
+      "progress": 100,
+      "current_id": null,
+      "pre_process": null,
+      "partnumber": "ODA0373"
+    },
+    {
+      "current_process_name": "",
+      "id": 2,
+      "process_name": "自动压膜",
+      "next_process": [
+        5
+      ],
+      "progress": 80,
+      "current_id": null,
+      "pre_process": null,
+      "partnumber": "ODA0373"
+    },
+    {
+      "current_process_name": "",
+      "id": 3,
+      "process_name": "成品质检",
+      "next_process": [
+        5
+      ],
+      "progress": 100,
+      "current_id": null,
+      "pre_process": null,
+      "partnumber": "ODA0373"
+    },
+    {
+      "current_process_name": "",
+      "id": 5,
+      "process_name": "手工外包",
+      "next_process": null,
+      "progress": 65,
+      "current_id": null,
+      "pre_process": null,
+      "partnumber": "ODA0373"
+    }
+  ]
+}
