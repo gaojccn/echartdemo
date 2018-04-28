@@ -47,8 +47,8 @@
                     },*/
                     left:'center',
                     top:'10%',
-//                    data:[],
-                    data: [{
+                    data:[],
+                    /*data: [{
                         name: '手工压膜',
                         x: 300,
                         y: 300,
@@ -76,9 +76,9 @@
                         value:100,
                         step:'1/2',
                         itemStyle:null
-                    }],
-//                     links: [],
-                    links: [
+                    }],*/
+                     links: [],
+                    /*links: [
                      {
                         source: '光固化抽检',
                         target: '手工压膜'
@@ -91,7 +91,7 @@
                     }, {
                         source: '手工压膜',
                         target: '打磨质检'
-                    }],
+                    }],*/
                     lineStyle: {
                         normal: {
                             opacity: 0.9,
@@ -103,6 +103,7 @@
             ]
         };
 
+        /**
         var data=option["series"][0].data;
         for(let i = 0;i<data.length;i++){
             var itemStyle={
@@ -134,15 +135,16 @@
             };
             data[i].itemStyle=itemStyle;
         }
+        */
 
         //alert("2.准备指定配置项");
         // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
+//        myChart.setOption(option);
 
         myChart.on("click", function (param){
             alert(param.dataIndex+':'+option.series[0].data[param.dataIndex].name);
         });
         // 相当于 document.ready，{代码}
-        $(function(){
+        /*$(function(){
             // alert("3.页面加载完毕");
-        })
+        })*/

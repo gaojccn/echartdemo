@@ -163,13 +163,18 @@ function initChartData(toInitDataArr, chartOriginalConfig) {
 function getPlanChartData(chartOptionConfig) {
 //    var url = "mes2/rest/echartData/${id}";
 //    this.ibdHttpService.serviceConfigs(url, 'GET').subscribe(function (resData) {
-    $.getJSON("11.json", function (resData){
+    $.getJSON("http://localhost:8089/mes2/rest/monitorOption/M20180320000004", function (resData){
         console.log('data=>', resData.data);
-        var planManageChartData = resData.data;
-        var chartOption = initChartData(planManageChartData, chartOptionConfig);
+        console.log('links=>', resData.links);
 
-        console.log('test', chartOption);
-        myChart.setOption(option);
+        chartOptionConfig.series[0].data=resData.data;
+        chartOptionConfig.series[0].links=resData.links;
+
+//        var planManageChartData = resData.data;
+//        var chartOption = initChartData(planManageChartData, chartOptionConfig);
+
+//        console.log('test', chartOptionConfig);
+        myChart.setOption(chartOptionConfig);
 
     });
 }
